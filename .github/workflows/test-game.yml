@@ -1,0 +1,74 @@
+name: Test Linux Tutorial Adventure Game
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test-game:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Verify directory structure
+        run: |
+          # This command finds all directories in the repository excluding the top-level directory and hidden directories
+          dir_count=$(find . -mindepth 1 -type d ! -path '*/\.*' | wc -l)
+          if [ "$dir_count" -lt 3 ]; then  # At least 3 subdirectories required
+            echo "Failed: Less than 3 directories found."
+            exit 1
+          else
+            echo "Passed: At least 3 directories found."
+          fi
+
+      - name: Check for victory.txt
+        run: |
+          # This command searches for the victory.txt file anywhere in the repository
+          victory_file=$(find . -name "victory.txt")
+          if [ -z "$victory_file" ]; then
+            echo "Failed: victory.txt not found."
+            exit 1
+          else
+            echo "Passed: victory.txt found."
+          fi
+
+      - name: Check for populated homer.txt
+        run: |
+          # This command searches for the homer.txt file anywhere in the repository
+          homer_file=$(find . -name "homer.txt")
+          if [ -z "$homer_file" ]; then
+            echo "Failed: homer.txt not found."
+            exit 1
+          fi
+
+          # This checks if homer.txt is populated with any text
+          if [ ! -s "$homer_file" ]; then
+            echo "Failed: homer.txt is empty."
+            exit 1
+          else
+            echo "Passed: homer.txt is populated with text."
+          fi
+
+      - name: Check for runme.sh with executable permissions
+        run: |
+          # This command searches for the runme.sh file anywhere in the repository
+          runme_file=$(find . -name "runme.sh")
+          if [ -z "$runme_file" ]; then
+            echo "Failed: runme.sh not found."
+            exit 1
+          fi
+
+          # This checks if runme.sh has executable permissions
+          if [ ! -x "$runme_file" ]; then
+            echo "Failed: runme.sh does not have executable permissions."
+            exit 1
+          else
+            echo "Passed: runme.sh has executable permissions."
+          fi
+
