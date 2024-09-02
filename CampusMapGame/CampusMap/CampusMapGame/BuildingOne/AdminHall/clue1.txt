@@ -1,0 +1,2 @@
+Class is about to start and I'm lost! Let's move up two directories and go to BuildingThree. Maybe that's where our class is!
+Tip: move up two directories, cd to Building Three, and ls to look for a clue.
