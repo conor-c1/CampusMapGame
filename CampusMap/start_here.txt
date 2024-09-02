@@ -1,1 +1,0 @@
-Welcome to the Campus Map Navigation game! Help your friend who's new to campus, find their class and make it there on time! First, cd into BuildingOne and find the file in AdminHall.

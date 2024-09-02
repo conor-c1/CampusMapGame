@@ -1,1 +1,0 @@
-We made it to the library, but this isn't where our class is! Let's go back up two directories and cd to BuildingFour and see what's in there.
