@@ -1,0 +1,1 @@
+Welcome to the Campus Map Navigation Game! Help your friend make it to class on time! First, cd into BuildingOne and then find the file in StudentQuest to begin! Good luck!
