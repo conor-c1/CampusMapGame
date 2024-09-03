@@ -1,0 +1,12 @@
+We're almost there! To complete the game, go back to RoomThree and make the runme.sh file executable by running the following commands:
+
+chmod +x runme.sh
+
+Then verify and run the script by typing:
+
+./runme.sh 
+
+
+Then locate the homer.txt in the same RoomThree directory. This file contains a listing of your home directory. To create it, run the following commands: 
+
+ls -l ~ > homer.txt
