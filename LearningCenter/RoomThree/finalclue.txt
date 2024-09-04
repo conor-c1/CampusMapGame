@@ -1,19 +1,14 @@
-Congratulations! We found our class in time! To complete the game, go back and cd to RoomThree from Learning Center. Locate the FinalDestination directory and find the homer.txt , which will contain a listing of your home directory. Create it by the running the following command:
+Congratulations! We found our class in time! To complete the game, cd into the FinalDestination directory from RoomThree. Find the homer.txt , which will contain a listing of the contents in your home directory. Create it by the running the following command:
 
 ls -l ~ > homer.txt
 
 
 This command creates a listing of the contents in your home directory and saves it to homer.txt.
-After this, navigate back to the RoomThree directory in LearningCenter. Find the FinalDestination directory again and locate the runme.sh file. Make the file executable by running the following command:
+After this, go back and locate the runme.sh file in FinalDestination. Make the file executable by running the following command:
 
 chmod +x runme.sh 
 
-
-Once you do this, you'll be able to execute the script by entering:
-
-./runme.s
-
-Then, navigate back the top directory, CampusMap, and create an empty file called victory.txt. Do this by running:
+Then, navigate back to the CampusMapGame directory, and create an empty file called victory.txt. Do this by running:
 
 touch victory.txt
 
@@ -28,7 +23,8 @@ git commit -m "I am victorious"
 Finally, push the changes to Github by running:
 
 git push
+_____________________________________________________________
 
+SUCCESS! You've completed the Campus Map Navigation Game! :)
 
-
-_____________________________________________________
+______________________________________________________________
