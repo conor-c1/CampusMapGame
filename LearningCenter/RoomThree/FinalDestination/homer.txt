@@ -1,15 +1,17 @@
-total 52
+total 60
 drwxrwxr-x 9 aws.admin aws.admin 4096 Sep  2 21:06 CampusMapGame
 drwxrwxr-x 5 aws.admin aws.admin 4096 Aug 28 14:24 command-line-diary-comment-update-conor-c1
 drwxr-xr-x 5 aws.admin aws.admin 4096 Sep  1 12:25 Desktop
 drwxr-xr-x 4 aws.admin aws.admin 4096 Jun 26 16:17 Documents
 drwxr-xr-x 2 aws.admin aws.admin 4096 Jun 26 17:02 Downloads
+drwxrwxr-x 4 aws.admin aws.admin 4096 Sep  3 15:59 in-class-ls-exercise
 drwxrwxr-x 7 aws.admin aws.admin 4096 May 15 14:42 Labs
+drwxrwxr-x 4 aws.admin aws.admin 4096 Sep  3 16:12 make-executable
 drwxr-xr-x 2 aws.admin aws.admin 4096 Apr 24  2023 Music
 drwxr-xr-x 2 aws.admin aws.admin 4096 Apr 24  2023 Pictures
 drwxr-xr-x 2 aws.admin aws.admin 4096 Apr 24  2023 Public
 -rw-rw-r-- 1 aws.admin aws.admin   33 Aug 30 14:17 README.md
 drwx------ 2 aws.admin aws.admin 4096 May 20 18:29 snap
 drwxr-xr-x 2 aws.admin aws.admin 4096 Apr 24  2023 Templates
-drwx------ 1 aws.admin aws.admin    0 Sep  2 13:23 thinclient_drives
+drwx------ 1 aws.admin aws.admin    0 Sep  5 15:27 thinclient_drives
 drwxr-xr-x 2 aws.admin aws.admin 4096 Apr 24  2023 Videos
